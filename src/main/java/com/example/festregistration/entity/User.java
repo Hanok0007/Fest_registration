@@ -7,7 +7,7 @@ import java.util.List;
 
 @Entity
 @Data
-@Table(name = "user")
+@Table(name = "users")
 public class User {  // Fixed class declaration
     
     @Id
@@ -28,4 +28,15 @@ public class User {  // Fixed class declaration
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Participant> participants = new ArrayList<>();
+   
+
+    // Add this getter method
+    public String getPassword() {
+        return password;
+    }
+
+    // Add corresponding setter if needed
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

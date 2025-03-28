@@ -1,5 +1,4 @@
 package com.example.festregistration.service;
-
 import com.example.festregistration.entity.Participant;
 import com.example.festregistration.repository.ParticipantRepository;
 import org.springframework.beans.factory.annotation.Autowired;
